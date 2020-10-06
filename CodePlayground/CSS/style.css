@@ -1,0 +1,107 @@
+
+
+*{
+    margin:0%;
+    padding:0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+}
+
+
+
+/*
+.container{
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap: 10px;
+}
+
+.item1{
+    background-color: aqua;
+}
+
+.item2{
+    background-color: blanchedalmond;
+}
+
+.item3{
+    background-color: chocolate;
+}
+
+.item4{
+    background-color: crimson;
+}
+
+.item5{
+    background-color: darkgreen;
+}
+
+.item6{
+    background-color: darkorchid;
+}
+
+*/
+
+*{
+    background-color: lightgray;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+}
+.container{
+    margin: auto;
+    padding: 5%;
+}
+
+#buttonGame{
+    background: gray;
+    padding: 3%;
+    
+}
+
+
+.button{
+    padding: 15px 25px;
+    margin: auto;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 9px black;
+    border-radius: 5px;
+    outline: none;
+    transition: ease-in;
+}
+
+.button:hover{
+    border: black 3px solid;
+}
+
+.button:active{
+    background-color: orangered;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+}
+
+#display, #taunt{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:lightgray;
+
+}
+
+#cars{
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+}
