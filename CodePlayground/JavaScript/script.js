@@ -1,14 +1,5 @@
-/*function changeText(id){
-    id.innerHTML = "Goodbye World";
-}*/
 
-/*function dogCalc(){
-    var age = document.getElementById('age').value;
-    var dogAge = age * 7;
-    display.innerHTML = dogAge;
-}
-*/
-
+//Button Game
 var x = 0;
 
 function counter() {
@@ -23,28 +14,43 @@ function counter() {
   } else if (a <= 20) {
     document.getElementById("taunt").innerHTML = "Why don't you listen?";
   } else if (a <= 30) {
-    document.getElementById("taunt").innerHTML = "How do you know I don't REALLY want you to click me?";
+    document.getElementById("taunt").innerHTML = "How do you know this won't blow up the world?";
   } else if (a <= 40) {
-    document.getElementById("taunt").innerHTML = "Almost there!";
-  } else {
-    document.getElementById("taunt").innerHTML = "Okay, you win";
+    document.getElementById("taunt").innerHTML = "Please stop.....";
+  } else if (a <= 74){
+    document.getElementById("taunt").innerHTML = "Okay, you win"
+  } else if (a <= 99){
+    document.getElementById("taunt").innerHTML = "Wow, still going huh?"
+  } else if (a <= 110){
+    document.getElementById("taunt").innerHTML = "I take it you're easily amused?"
+  }else {
+    document.getElementById("taunt").innerHTML = "...";
   }
  
 
 
 }
 
-var car = { type: "Acura", model: "Integra", color: "white" };
-var txt = 'Here is my "favorite" car. The color has "5" letters, can you guess what it is?';
+
+//Guess car color
+var car = { type: "Bel-Air", model: "Chevrolet", color: "blue" };
+var txt = 'Here is my "favorite" car. The color has "4" letters, can you guess what it is?';
 
 document.getElementById("txt").innerHTML = txt;
-document.getElementById("demo").innerHTML = car.type + "<br>" + car.model;
+document.getElementById("demo").innerHTML = car.model + " " + car.type;
 
 
 function guess() {
  var guess = document.getElementById("guess").value;
-  if (guess == "white") {
+  if (guess == "blue" || guess == "Blue") {
     document.getElementById("answer").innerHTML = "Correct!";
+    var pic = document.createElement("IMG");
+    pic.setAttribute("src", "/Images/car.jpg");
+    pic.setAttribute("width", "304");
+    pic.setAttribute("height", "228");
+    pic.setAttribute("position", "center");
+    document.body.appendChild(pic);
+
   } else {
     document.getElementById("answer").innerHTML = "Guess Again....";
   }
@@ -54,7 +60,11 @@ function guess() {
 
 
 
-/*function arrayPlay(){
+/*
+
+This isn't working yet :'(
+
+function arrayPlay(){
   let array = [];
   while(true){
     let input = document.getElementById('arrayPlay').value;
