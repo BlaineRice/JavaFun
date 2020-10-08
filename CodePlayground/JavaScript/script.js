@@ -44,14 +44,12 @@ function guess() {
  var guess = document.getElementById("guess").value;
   if (guess == "blue" || guess == "Blue") {
     document.getElementById("answer").innerHTML = "Correct!";
-    var pic = document.createElement("IMG");
-    pic.setAttribute("src", "/Images/car.jpg");
-    pic.setAttribute("width", "304");
-    pic.setAttribute("height", "228");
-    pic.setAttribute("position", "center");
-    document.body.appendChild(pic);
-
-  } else {
+      var car = document.getElementById("car");
+      if (car.style.display === "block") {
+        car.style.display = "none";
+      } else {
+        car.style.display = "block";
+      }}else {
     document.getElementById("answer").innerHTML = "Guess Again....";
   }
 }
